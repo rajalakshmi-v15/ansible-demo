@@ -30,12 +30,15 @@ name: ansible-host
 This will open port 5000 for all the instances in the "default" network.
 
 ### SSH into one of the hosts
-1. Click on the small downward arrow next to SSH
+1. Click on the instance you want to SSH into.
+2. Click on the small downward arrow next to SSH
 2. View gcloud command
 3. Click on RUN IN CLOUD SHELL. This will launch a Cloud Shell and automatically put you inside the desired instance (ansible-controller or ansible-host, whichever is desired)
 
 ### Install Ansible in both instances 
-Follow this steps in this link: https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-18-04
+This step has to be done in **both** the instances.
+First SSH into the desired instance (steps in the previous section).
+Follow the steps in this link (Only step 1): https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-18-04
 
 Check: `ansible --version` should return the version number in the first line.
 
